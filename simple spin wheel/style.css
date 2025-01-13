@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container button#spin-btn {
+  position: relative;
+  padding-right: 20px;
+}
+
+.container button#spin-btn::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url(https://cdn1.iconfinder.com/data/icons/prettyoffice8/256/Arrow-turn-left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wrapper {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
